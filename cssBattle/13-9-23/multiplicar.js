@@ -10,4 +10,4 @@ function multiplicar(num, toMulte){
 }
 
 const arr = [2,4,5,45,3456,7,4,2,67,56,56,1,57,7567]
-console.log(Math.min(arr));
+console.log(Math.max(...arr));
