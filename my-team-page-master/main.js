@@ -10,29 +10,24 @@ const users = [
       "companyPosition": "Art director "
     },
     {
-        "name": "Bill Mahoney ",
-        "img": "./photo1.png",
-        "companyPosition": "Product owner"
+        "name": "Shae Lee    ",
+        "img": "./photo3.png",
+        "companyPosition": "Tech Lead       "
       },
       {
-        "name": "Bill Mahoney ",
-        "img": "./photo1.png",
-        "companyPosition": "Product owner"
+        "name": "Skylah Luu        ",
+        "img": "./photo4.png",
+        "companyPosition": "UX designer"
       },
       {
-        "name": "Bill Mahoney ",
-        "img": "./photo1.png",
-        "companyPosition": "Product owner"
+        "name": "Griff Richards ",
+        "img": "./photo5.png",
+        "companyPosition": "Developer"
       },
       {
-        "name": "Bill Mahoney ",
-        "img": "./photo1.png",
-        "companyPosition": "Product owner"
-      },
-      {
-        "name": "Bill Mahoney ",
-        "img": "./photo1.png",
-        "companyPosition": "Product owner"
+        "name": "Stan Jhon ",
+        "img": "./photo6.png",
+        "companyPosition": "Developer"
       },]
 class HolaMundo extends HTMLElement{
     constructor(){
@@ -65,4 +60,11 @@ window.addEventListener('load', ()=>{
         card.setAttribute('company-position', element.companyPosition);
         document.querySelector('#user-cont').appendChild(card)
     });
+})
+window.addEventListener('resize', ()=>{
+    console.log(document.body.clientWidth);
+    // if(document.body.clientWidth < 600){
+    //     alert('Hola mundo como estas')
+    // }
+
 })

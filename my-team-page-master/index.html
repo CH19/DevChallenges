@@ -12,7 +12,6 @@
     <title>My-Team-Page-Master</title>
   </head>
   <body>
-    <div class="container">
       <div class="header">
         <h3 class="title">The creative crew        </h3>
         <div>
@@ -23,9 +22,36 @@
         </div>
       </div>
       <div class="user-container" id="user-cont">
-     
+        <!-- div para tener un hijo y que el pseudoselector sea mas facil  -->
+        <div style="display: none;"></div>
       </div>
-    </div>
-    <script src="./main.js"></script>
+      <footer>
+        <p>Created By <a class="ancla" href="https://github.com/CH19">CH19</a> -  <a class="ancla" href="https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U">DevChallenges.io</a></p>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+     
+      <script src="./main.js"></script>
+      <script>
+        window.addEventListener('load', ()=>{
+          let color = new ColorThief();
+          document.querySelectorAll('.user-photo').forEach(element => {
+            element.addEventListener('mouseenter', ()=> {
+              const colors = color.getColor(element);
+              console.log(colors);
+              const pallete = `rgb(${colors[0]}, ${colors[1]}, ${colors[2]})`
+              element.setAttribute('style',  `filter:drop-shadow(0 0 25px ${pallete})`)
+              document.querySelectorAll('.ancla')[0].setAttribute('style', `color: ${pallete}`);
+              document.querySelectorAll('.ancla')[1].setAttribute('style', `color: ${pallete}`)
+
+            });
+            element.addEventListener('mouseout', ()=>{
+              element.removeAttribute('style');
+              document.querySelectorAll('.ancla')[0].removeAttribute('style');
+              document.querySelectorAll('.ancla')[1].removeAttribute('style');
+
+            })
+          });
+        });
+     </script>
   </body>
 </html>

@@ -1,19 +1,25 @@
 :root{
     font-family: 'PT Serif';
 }
-.container{
+body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
     justify-content: center;
 }
 .header{
     display: flex;
     width: 100%;
+    height: fit-content;
     justify-content: space-around;
     padding-top: 20px;
+}
+.header div h4{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
 .header div:first-of-type{
     display: flex;
@@ -32,17 +38,36 @@
     display: grid;
     grid-template-columns: repeat(3, 15rem );
     justify-content: center;
+    position: relative;
+    top: 80px;
+  
 }
 hola-mundo{
-    background-color: red;
+    /* background-color: red; */
     display: flex;
 }
+.user-container > hola-mundo:nth-child(3n){
+    transform: translateY(30%);
+}
 .user{
-    width: 11.9em;
+    width: 100%;
     height: fit-content;
 }
 .user-photo-figure{
+    cursor: pointer;
     position: relative;
+    transform: translateX(-30%);
+}
+.user-photo{
+    filter: drop-shadow(0 0 5px black);
+    width: 10em;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 10px;}
+    
+.user-photo:hover{
+
+/* codigo del hover en el indexhtml  */
 }
 .user-photo-figure::before{
     content: attr(company-position);
@@ -51,7 +76,7 @@ hola-mundo{
     height: 40px;
     z-index: 300;
     position: absolute;
-    right: -60px;
+    right: -3.5rem;
     top: 30px;
     font-size: 8px;
     font-weight: 100;
@@ -59,12 +84,52 @@ hola-mundo{
     text-transform: uppercase;
     transform: rotate(90deg) scale(-1);
 }
-.user-photo{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
 .user-name{
     padding-top: 0;
     margin-top: 0;
+}
+footer{
+    display: flex;
+    align-items: flex-end;
+    width: 30vw;
+    height: 15rem;
+    z-index: 340;
+}
+.ancla{
+    text-decoration: none;
+    color: red;
+}
+@media screen and (max-width: 500px) {
+    .header{
+        flex-direction: column;
+    }
+    .header:first-child{
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+    }
+    .header div:first-of-type{
+        padding: 0;
+        margin: 0;
+    }
+    .user-container{
+
+       grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    }
+    .user-photo{
+        width: 9em;
+        height: 12rem;
+        object-fit: cover;
+        border-radius: 10px;}
+    
+    .user-container > hola-mundo:nth-child(2n){
+    transform: translateY(0);
+   }
+   .user-photo-figure::before{
+    font-size: 10px;
+   }
+   .user-container > hola-mundo{
+    transform: translateY(30%);
+}
 }
