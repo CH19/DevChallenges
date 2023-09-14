@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #191310;
+            display: grid;
+            place-items: center;
+            height: 80vh;
+        }
+        .container{
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(#84271E 30%, #191310 25% );
+            border-radius: 50%;
+            box-shadow: 0 0 0 30px #ECA23E;
+        }
+        .container::after, .container::before{
+            content: '';
+            display: block;
+            background: radial-gradient(#191310 30px, #ECA23E 25px );
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            transform: translate(-110%,30px);
+            border-radius: 50%;
+            /* clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); */
+            clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+            
+        }
+        .container::before{
+            transform: translate(160%,30px) scaleY(-1);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>

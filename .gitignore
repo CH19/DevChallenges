@@ -1,2 +1,8 @@
 *.rar
 *.zip
+.nodeModules
+nodeModules
+nodeModules/
+.vscode
+node_Modules
+node_Modules/

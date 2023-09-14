@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Zombie</title>
+    <style lang="en">
+        @font-face {
+            font-family: Creepster;
+            src: url(./Creepster-Regular.ttf);
+        }
+    :root{
+            --sky: #8FBDD3;
+            --zombie: #76E947;
+            --zombieEar: #318012;
+            --eye: #000;
+            --white: #f5f5f5;
+            --earSize: 20px;
+        }
+        body{
+            background-color: var(--sky);
+            display: grid;
+            place-items: center;
+            height: 90vh;
+            position: relative;
+        }     
+        .zombie-container{
+            background-color: var(--zombie);
+            height: 20em;
+            width: 20em;
+            border-radius: 20px;
+            box-shadow: 0 0 5px 5px var(--eye);
+            position: relative;
+            /* padding-top: 10px; */
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+        /* .eye-container{
+            width: 100%;
+            /* position: absolute */
+            /* transform: translateY(40px); */
+        /* } */
+        .eye{
+            background-color: var(--white);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            box-shadow: 0 0 0  10px var(--eye);
+            transform: translateY(90px);
+
+        }
+        .text{
+            font-family: Creepster;
+            font-size: 3em;
+            font-stretch: 10px;
+            padding: 20px;
+            position: absolute;
+            padding: 0  20px  ;
+            top: -3em;
+            left: -120px;
+            background-color: var(--white);
+        }
+        .ear{
+            width: var(--earSize);
+            height: var(--earSize);
+            border-radius: 50%;
+                        background-color: var(--zombie);
+            opacity: 70%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;   
+            box-shadow: 0 0 2px var(--earSize) var(--zombie);             
+            transform: translate(-10px);        
+        }
+        .ear::before{
+            content: '';
+            width: var(--earSize);
+            height: var(--earSize);
+            background-color: var(--zombie);
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: auto;
+            box-shadow: 0 0 2px 25px var(--zombie), 20px 0 10px 20px black;             
+
+            transform: translateX(20em);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="zombie-container">
+        <div class="text">
+            <p>BRAINS !!!</p>
+        </div>
+    <!-- <div class="eye-container"> -->
+        <div class="eye eye-left"></div>
+        <div class="eye eye-right"></div>
+        <div class="ear"></div>
+    <!-- </div> -->
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-9-23</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        :root{
+            --tamanoBordes: 2em;
+        }
+        body{
+            display: grid;
+    place-items: center;
+    height: 80vh;
+    background-color: #B5D1FB;
+    
+    }
+.container {
+    width: 100px;
+    height: 300px;
+
+    display: flex;
+    width: 100%;
+}
+.cosita{
+    background: none;
+    width: 50%;
+    height: 100%;
+    /* filter: drop-shadow(42em 0 red); */
+}
+.cosita-1{
+    border-top: var(--tamanoBordes) solid  #230259;
+    border-bottom: var(--tamanoBordes) solid #8819F6;
+    border-right: var(--tamanoBordes) solid #8819F6;
+    border-left: none;
+    border-end-end-radius: 50% ;
+    border-start-end-radius: 50%;
+}
+.cosita-1::before{
+    content:"";
+    display: block;
+    height: inherit;
+    width: 100%;
+    transform: translateX(97%) scaleX(-1);
+    border: var(--tamanoBordes) solid  #230259;
+    border-bottom: var(--tamanoBordes) solid  #230259;
+    border-top: var(--tamanoBordes) solid #8819F6;
+    border-right: var(--tamanoBordes) solid  #230259;
+    border-left: none;
+    border-end-end-radius: 50%;
+    border-start-end-radius: 50%;
+}
+  /* .cosita-2{
+    border-start-start-radius: 50%;
+    border-end-start-radius: 50%;
+    border: var(--tamanoBordes) solid  #8819F6;
+    border-right: none; */
+
+.text{
+    
+}
+</style>
+
+</head>
+<body>
+    <!-- objetivo 
+    objetiv: https://firebasestorage.googleapis.com/v0/b/cssbattleapp.appspot.com/o/user%2Fummd3POvEDfFyeFvVdOMG3OOrwE2%2Ftargets%2Ftarget_BNjScZP.png?alt=media -->
+        <div class="text">
+            <p>Brains!!!</p>
+        </div>
+    <div class="container">
+        <div class="cosita cosita-1" ></div>
+        <div class="cosita cosita-2"></div>
+    </div>
+    <button>Expectativa</button>
+    <img style="display: none;" src="https://firebasestorage.googleapis.com/v0/b/cssbattleapp.appspot.com/o/user%2Fummd3POvEDfFyeFvVdOMG3OOrwE2%2Ftargets%2Ftarget_BNjScZP.png?alt=media" alt="">
+    <script>
+        document.getElementsByTagName('button')[0].addEventListener('click', ()=>{
+            document.getElementsByTagName('img')[0].style.display = 'block';
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tenedor-desafio8</title>
+    <style>
+        body{
+            background-color: #6592CB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            flex-direction: column;
+        }
+        .tenedor{
+            background-color: #060F53;
+            width: 150px;
+            height: 150px;
+            border-radius: 0 0 90% 90%;
+        }
+        div:first-of-type{
+            width: fit-content;
+            display: flex;
+            position: absolute;
+            transform: translateY(-80%);
+            z-index: -1;
+            
+        }
+        p{
+            background-color: #6592CB;
+            width: 21.5px;
+            height: 110px;
+            border-radius: 30px;
+        }
+        div p:nth-child(odd){
+            background-color: #060F53;
+        }
+        .palito{
+            width: 30px;
+            height: 50%;
+            background-color: #060F53;
+            position: absolute;
+            transform: translateY(50%);
+        }
+    </style>
+</head>
+<body>
+    <div><p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p></div>
+    <div class="tenedor"></div>
+    <div class="palito"></div>
+</body>
+</html>
