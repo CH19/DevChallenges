@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Interior Consultant}</h1>
+<h1 align="center">Interior Consultant</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,17 +8,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
-      Demo
+    <a href="https://ch19.github.io/PlatziClass/Interior-Consultant/interior-consultant-master/index.html">
+      Deploy
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
-      Solution
+    <a href="https://github.com/CH19/PlatziClass/tree/master/Interior-Consultant/interior-consultant-master">
+      Repository
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb">
-      Challenge
-    </a>
+
   </h3>
 </div>
 
@@ -41,9 +39,9 @@
 
 
 - Este proyecto es una landing page responsive de una empresa consultora de interiores utilice y agrege algunas cosas para mejorar la plantilla suministrada y hacerlo mas efectiva
-- Al desarrollar este pryecto pude mejorar mis habilidades en CSS utilizando mejor el uso de transiciones para elementos html y crear modales nativos con html,css y javascript es algo basico pero simple o efectivo
+- Al desarrollar este pryecto pude mejorar mis habilidades en CSS utilizando mejor el uso de transiciones para elementos html y crear modales nativos con html,css y javascript es algo basico pero simple o efectivo. En este repositorio por primera vez hice un enfoque mobile first por lo que puede que paresca que la version web le gane a la mobile ya que me enfoque en eso y eso mismo.
 
-- Me esta encanto este proyecto y en general todos los de devChallenges ya que me permite practicar mis habilidades y reforzar mi CSS la diferencia y comprension en buenas practicas es enorme :)
+- Me esta encanto este proyecto y en general todos los de devChallenges ya que me permite practicar mis habilidades y reforzar mi CSS la diferencia y comprension en buenas practicas es enorme
 
 ### Built With
 
@@ -65,5 +63,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@yCH19](https://{github.com/CH19})
-- Twitter [@your-christiianelcrack777]([https://{twitter.com/your-username}](https://twitter.com/chriselcrack777))
+- GitHub [@CH19](https://{github.com/CH19})
+- Twitter [@christiianelcrack777]([https://{twitter.com/your-username}](https://twitter.com/chriselcrack777))
