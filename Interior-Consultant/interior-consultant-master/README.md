@@ -62,6 +62,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 - [Crear modal en html css javascript](https://www.youtube.com/watch?v=Iaw9rFopXPY) este video me ayudo bastante en la resolucion del desafio
 
 ## Contact
-
 - GitHub [@CH19](https://{github.com/CH19})
 - Twitter [@christiianelcrack777]([https://{twitter.com/your-username}](https://twitter.com/chriselcrack777))

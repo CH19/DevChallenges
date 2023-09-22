@@ -1,0 +1,21 @@
+{
+  "name": "recipe-page-ch19",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "author": "Christian La Cruz <chcc190505@gmail.com",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.36"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
+  }
+}
