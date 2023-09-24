@@ -38,22 +38,21 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](./src/assets/recipe-page-preview.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+Esta es una landing page de paginas de pastelerias para enseñar productos y como hacer recetas relacionadas cone esta indole. fue programada en typescript y con vue como framework para probar el sistema de modulos en la maquetación. Como fue mi primera experiencia combinando typescript con Vue no se sorprendan si en la creacion de componentes no hay las mejores prácticas
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- La demo la pueden ver en el siguiente [link]('#')
+- Mi experiencia de desarrollo fue bastante agradale y rapida en diversificar la creacion de las paginas en componentes
+- En este proyecto aprendi a usar Vue con Typescript, como pasar las promps en este framework de mejor forma, la maquetacion mobile first la estoy mejorando, etc
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
+
 - [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [Typescript](https://www.typescriptlang.org/)
 
 ## Features
 
@@ -77,19 +76,16 @@ $ git clone https://github.com/your-user-name/your-project-name
 $ npm install
 
 # Run the app
-$ npm start
+$ npm run dev
 ```
 
 ## Acknowledgements
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [ Vue + Vite + TypeScript + Setup Script: Comunicación entre componentes ](https://www.youtube.com/watch?v=lSEW2efUTEE&t=116s): Este video de fernando herrera me ayudo a comprender mejor como funciona la reactividad en vue y buenas practicas al trabajar con esta herramienta y typescript
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@CH19](https://github.com/CH19)
+<!-- - Twitter [@your-twitter](https://{twitter.com/your-username}) -->

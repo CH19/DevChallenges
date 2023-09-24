@@ -29,7 +29,7 @@ cantidadProductos.value = 1;
 function itsCompelted(event: MouseEvent){
     const boton = event.target;
     // const blueSelected = '#A2C7E9'
-    boton.classList.toggle('boton-selected')
+    if(boton instanceof HTMLElement)     boton.classList.toggle('boton-selected')
 }
 
 </script>
