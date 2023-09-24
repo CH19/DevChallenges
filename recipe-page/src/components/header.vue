@@ -1,5 +1,5 @@
     <script setup lang="ts">
-    import { ref, defineComponent } from 'vue';
+    import { ref } from 'vue';
 
     const message = ref('Classic Cheesecake Recipe');
     const subtitle = ref('Look no further for a creamy and ultra smooth classic cheesecake recipe! Paired with a buttery graham cracker crust, no one can deny its simple decadence. For the best results, bake in a water bath.');

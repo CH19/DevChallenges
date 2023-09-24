@@ -12,7 +12,8 @@ const steps = [{
 }]
 </script>
 <template>
-   <div class="restaurant-container" style="display: flex; margin: 10px 15px; height: fit-content;">
+   <div class="clock">
+      <div class="restaurant-container" style="display: flex; margin: 10px 15px; height: fit-content;">
       <img src="../assets/restaurant.svg" style="filter: invert(65%) sepia(62%) saturate(572%) hue-rotate(334deg) brightness(98%) contrast(93%);" alt="">
       <div style="font-size: 10px;">
          <p>Yields</p>
@@ -30,6 +31,7 @@ const steps = [{
         <p style="height: fit-content;">        {{ step.time }}</p>
     </div>
       </div>
+   </div>
    </div>
 </template>
 
@@ -70,5 +72,17 @@ const steps = [{
  .clock-container > div p:first-of-type{
     color: #BDBDBD;
    font-weight: 300;
+}
+@media screen and (min-width: 600px) {
+   .clock-container{
+      flex-direction: column;
+      align-items: start;
+   }
+   .clock{
+      /* background-color: red; */
+      margin-right: 2rem;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 1px #000;
+   }
 }
 </style>

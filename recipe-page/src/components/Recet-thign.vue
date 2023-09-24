@@ -4,12 +4,13 @@
     import footeri from './v-footer.vue'
 </script>
 <template>
-    <Ingredients />
+    <div class="BigContainer">
+        <Ingredients />
     <Instructions />
     <footeri />
+    </div>
     
 </template>
 
 <style scoped>
-
 </style>
