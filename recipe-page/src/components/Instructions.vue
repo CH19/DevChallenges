@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const Instructions = ref([
+const instructions = ref([
     {
         id: 1,
         text: 'Adjust the oven rack to the lower-middle position and preheat oven to 350°F (177°C).'
@@ -51,20 +51,17 @@ const Instructions = ref([
 
 ]);
 
-function itsCompelted(clicked: boolean){
-    clicked = !clicked;
-}
 
 </script>
 
 
 <template>
-    <div v-if="Instructions.lenght > 0">
+    <div v-if="instructions.length > 0">
         <h4>Instruccions</h4>
-        <ol>
-            <li>
+        <ol >
+            <li :index="index +1" v-for="(instruction, index) of instructions">
                 <div>
-                    text
+                   {{instruction.text  }} 
                 </div>
             </li>
         </ol>
@@ -72,5 +69,22 @@ function itsCompelted(clicked: boolean){
 </template>
 
 <style scoped>
-
+ol{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+ol li{
+    counter-reset: myCouner;
+    list-style: none;
+}
+ol li::before{
+    content: attr(index);
+    position: absolute;
+    left: 1.5rem;
+    color: #FFF;
+    background-color: #F19A4E;
+    padding: 2px 5px;
+    border-radius: 20%;
+}
 </style>

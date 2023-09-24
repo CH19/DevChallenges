@@ -28,11 +28,8 @@ cantidadProductos.value = 1;
 
 function itsCompelted(event: MouseEvent){
     const boton = event.target;
-    console.log(boton);
-    if(boton.style.background != 'blue'){
-        return boton.style.background = 'blue';
-    }
-    return boton.style.background = 'none';
+    // const blueSelected = '#A2C7E9'
+    boton.classList.toggle('boton-selected')
 }
 
 </script>
@@ -46,7 +43,7 @@ function itsCompelted(event: MouseEvent){
         <h4>{{ ingredient.title }}</h4>
         <div class="steps-container" v-for="step of ingredient.steps" :key="step" >
             <div class="step" style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
-                <button @click="itsCompelted" style="width: 21px; height: 21px; border: 1px solid #828282; background-color: #fff; border-radius: 30%;"></button>
+                <button class="boton" @click="itsCompelted"></button>
                  <p>{{ step }}</p>
                 </div>
         </div>
@@ -56,5 +53,20 @@ function itsCompelted(event: MouseEvent){
 </template>
 
 <style scoped>
+    .boton{
+        width: 21px; height: 21px; border: 1px solid #828282; background-color: #fff; border-radius: 30%;
+}
+.boton-selected{
+    background-color: #A2C7E9;
+    outline: 2px solid #B07D65;
+}
+.boton-selected::before{
+    content: '✔';
+    color: #B07D65;
+    width: inherit;
+    height: inherit;
+    position: relative;
+    z-index: 3;
 
+}
 </style>

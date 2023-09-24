@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-
-const message = ref('Hola');
-const time = ref('30 mins');
 
 const steps = [{
    message: 'Prep TIme',
