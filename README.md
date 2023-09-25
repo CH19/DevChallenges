@@ -34,11 +34,16 @@ Conjunto de desafios hechos para dev-challenges
 
 ![screenshot](./404-not-found-master/page-error-prev.png)
 
+[Deploy](https://ch19.github.io/dev-challenges-responsive/404-not-found-master/idex.html)
+
+
 Este primer desafio consistio en la construccion de una paginas de error 404 y en maquetarlo de forma responsive, lo hice con mis conocimientos de HTML, CSS y en este desafio en particular hay alugnos componentes de bootstrap para probarlo
 
 #### Desafio 2
 
 ![screen](./my-team-page-master/page-team-prev.png)
+
+[Deploy](https://ch19.github.io/dev-challenges-responsive/my-team-page-master/index.html)
 
 Este proyecto me permitio seguir mejorando en mis habilidades con HTML y CSS incursionando en el uso de propiedades como transform, translate, los selectores ::before y meejorar el css-grid. Además de eso mi proyecto lo combine co un poco de Javascript usando la libreria de [Color-Thief](https://lokeshdhakar.com/projects/color-thief/) para utilizar la paleta de colores al hacer hover e las cards
 
@@ -46,11 +51,16 @@ Este proyecto me permitio seguir mejorando en mis habilidades con HTML y CSS inc
 
 ![screen](./Interior-Consultant/interior-consultant-master/assets/projectPhoto.png)
 
+[Deploy](https://ch19.github.io/dev-challenges-responsive/Interior-Consultant/interior-consultant-master/index.html)
+
 Este proyecto es una landing page responsive de una empresa consultora de interiores utilice y agrege algunas cosas para mejorar la plantilla suministrada y hacerlo mas efectiva
 
 #### Desafio 4
 
 ![screen](./recipe-page/src/assets/recipe-page-preview.png)
+
+[Deploy](https://6511bb836686c84ce69ab6ec--celebrated-liger-278b00.netlify.app/)
+
 Esta es una landing page de paginas de pastelerias para enseñar productos y como hacer recetas relacionadas cone esta indole. fue programada en typescript y con vue como framework para probar el sistema de modulos en la maquetación. Como fue mi primera experiencia combinando typescript con Vue no se sorprendan si en la creacion de componentes no hay las mejores prácticas
 
 
