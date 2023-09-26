@@ -17,6 +17,7 @@
     - [Desafio 2](#desafio-2)
     - [Desafio 3](#desafio-3)
     - [Desafio 4](#desafio-4)
+    - [Desafio 5](#desafio-5)
   - [Built With](#built-with)
 - [Features](#features)
 - [How To Use](#how-to-use)
@@ -63,6 +64,12 @@ Este proyecto es una landing page responsive de una empresa consultora de interi
 
 Esta es una landing page de paginas de pastelerias para enseñar productos y como hacer recetas relacionadas cone esta indole. fue programada en typescript y con vue como framework para probar el sistema de modulos en la maquetación. Como fue mi primera experiencia combinando typescript con Vue no se sorprendan si en la creacion de componentes no hay las mejores prácticas
 
+
+#### Desafio 5
+
+![screen](./my-gallery/my-gal-prev.png)
+
+En este desafio practique mas el diseño responsive, no lo hice con ningun framework ni nada pero lo particular es que me rete a terminar este reto como tiempo maximo de una hora simulando una prueba tecnica, resultado el cual no consegui pero se intento, además de eso repase muchos conocimientos que tenía olvidados de CSS grid para la realizacion de las mejores practicas 
 
 ### Built With
 
