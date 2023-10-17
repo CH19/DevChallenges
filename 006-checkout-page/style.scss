@@ -1,10 +1,36 @@
-.caja{
-    width: 300px;
-    height: 300px;
-    div{
-        width: 70%;
-        height: 100%;
-        background-color: red;
-        
+$gray: #F2F2F2;
+%flexi{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+}
+%font{
+    $size: 36px;
+    $fontColor: #4E5150;
+    font-size: $size;
+    color: $fontColor;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.header{
+    // @include theme;
+    h1{
+        @extend %font;
+    }
+}
+.product-cards{
+    background-color: $gray;
+    .product-card{
+        @extend %flexi;
+        figure{
+            width: 150px;
+            img{
+                border-radius: 20px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     }
 }

@@ -1,11 +1,27 @@
-.caja {
-  width: 300px;
-  height: 300px;
+.product-cards .product-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5px;
 }
-.caja div {
-  width: 70%;
+
+.header h1 {
+  font-size: 36px;
+  color: #4E5150;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-cards {
+  background-color: #F2F2F2;
+}
+.product-cards .product-card figure {
+  width: 150px;
+}
+.product-cards .product-card figure img {
+  border-radius: 20px;
+  width: 100%;
   height: 100%;
-  background-color: red;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
