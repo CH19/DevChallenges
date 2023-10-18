@@ -18,6 +18,7 @@
     - [Desafio 3](#desafio-3)
     - [Desafio 4](#desafio-4)
     - [Desafio 5](#desafio-5)
+    - [Desafio 6](#desafio-6)
   - [Built With](#built-with)
 - [Features](#features)
 - [How To Use](#how-to-use)
@@ -70,6 +71,12 @@ Esta es una landing page de paginas de pastelerias para enseñar productos y com
 ![screen](./my-gallery/my-gal-prev.png)
 
 En este desafio practique mas el diseño responsive, no lo hice con ningun framework ni nada pero lo particular es que me rete a terminar este reto como tiempo maximo de una hora simulando una prueba tecnica, resultado el cual no consegui pero se intento, además de eso repase muchos conocimientos que tenía olvidados de CSS grid para la realizacion de las mejores practicas 
+
+#### Desafio 6
+
+![screen](./006-checkout-page/assets/006-prev.png)
+
+En este desafio repase y utilice funciones de SCASS en la creacion de una pequeña pagina de checkeo con interaccion en productos 
 
 ### Built With
 
