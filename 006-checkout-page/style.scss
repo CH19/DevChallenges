@@ -4,6 +4,19 @@ $grayFont: #828282;
 $grayFont2: #4E5150;
 $orange: #F2994A;
 $direction: row;
+%inp{
+        padding: 5px;
+        padding-left: 20px;
+        &:focus-visible{
+            outline: none;
+        }
+}
+%ion{
+        top: 1.5rem;
+        left: 5px;
+        position: absolute;
+    
+}
 %flexi{
     display: flex;
     justify-content: center;
@@ -27,15 +40,12 @@ $direction: row;
 .product-cards{
     background-color: $gray;
     border-radius: 20px;
-    div{
-        border: black solid 1px;
-    }
+
     .product-card{
         display: grid;
         grid-template-columns: 1fr 1fr;
         place-items: center;
         figure{
-            border: black solid 1px; 
             max-width: 200px;
             img{
                 border-radius: 20px;
@@ -78,8 +88,114 @@ $direction: row;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         place-items: center;
-        padding: 05px;
-
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid $grayFont;
+        button{
+            border: none;
+            color: $grayFont;
+            font-size: calc(1rem * 1.2);
+            border-radius: 5px;
+            max-width: 30px;
+            cursor: pointer;
+        }
 
     }
+}
+
+.account{
+    div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        gap: 20px;
+        max-width: 90%;
+        margin-left: 20px;
+        border-top: 1px solid $grayFont;
+        color: $grayFont2;
+        &.selected{
+            margin-top: 30px;
+        }
+    }
+}
+.contact-information{
+    div h3{
+        color: $grayFont;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        color: $grayFont;
+        div{
+            &.input-container{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                input{
+                    @extend %inp
+                }
+                label{
+                    font-size: 14px;
+        
+                }
+                ion-icon{
+                    @extend %ion
+                }
+            }
+        &.next{
+            margin-top: 10px;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            div{
+                position: relative;
+                ion-icon{
+                    @extend %ion;
+                }
+                input{
+                    @extend %inp;
+                }
+            }
+        }
+        }
+        .Send{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 15px;
+            button{
+                border: none;
+                padding: 12px;
+                font-size: 1rem;
+                background-color: $orange;
+                color: #FFF;
+                box-shadow: 3px 5px 15px black;
+                cursor: pointer;
+            }
+
+        }
+    }
+}
+@media screen and (min-width: 600px) {
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    .product-cards{
+        max-width: 400px;
+        max-height: 300px;
+    }
+    .next{
+    div{ 
+    input{
+        padding: 20px;
+    }
+        ion-icon{
+        
+        transform: translateY(-15px) translateX(70px);
+    }
+    }
+}
 }

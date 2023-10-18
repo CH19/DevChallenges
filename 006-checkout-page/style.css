@@ -1,3 +1,17 @@
+.contact-information form div.next div input, .contact-information form div.input-container input {
+  padding: 5px;
+  padding-left: 20px;
+}
+.contact-information form div.next div input:focus-visible, .contact-information form div.input-container input:focus-visible {
+  outline: none;
+}
+
+.contact-information form div.next div ion-icon, .contact-information form div.input-container ion-icon {
+  top: 1.5rem;
+  left: 5px;
+  position: absolute;
+}
+
 .header h1 {
   font-size: 36px;
   color: #4E5150;
@@ -8,16 +22,12 @@
   background-color: #F2F2F2;
   border-radius: 20px;
 }
-.product-cards div {
-  border: black solid 1px;
-}
 .product-cards .product-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
 }
 .product-cards .product-card figure {
-  border: black solid 1px;
   max-width: 200px;
 }
 .product-cards .product-card figure img {
@@ -60,7 +70,91 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #828282;
+}
+.product-information .product-quantity button {
+  border: none;
+  color: #828282;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  max-width: 30px;
+  cursor: pointer;
+}
+
+.account div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 20px;
+  max-width: 90%;
+  margin-left: 20px;
+  border-top: 1px solid #828282;
+  color: #4E5150;
+}
+.account div.selected {
+  margin-top: 30px;
+}
+
+.contact-information div h3 {
+  color: #828282;
+}
+.contact-information form {
+  display: flex;
+  flex-direction: column;
+  color: #828282;
+}
+.contact-information form div.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.contact-information form div.input-container label {
+  font-size: 14px;
+}
+.contact-information form div.next {
+  margin-top: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contact-information form div.next div {
+  position: relative;
+}
+.contact-information form .Send {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 15px;
+}
+.contact-information form .Send button {
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #F2994A;
+  color: #FFF;
+  box-shadow: 3px 5px 15px black;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  .product-cards {
+    max-width: 400px;
+    max-height: 300px;
+  }
+  .next div input {
+    padding: 20px;
+  }
+  .next div ion-icon {
+    transform: translateY(-15px) translateX(70px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
